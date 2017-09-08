@@ -21,8 +21,6 @@ namespace Arkanis.Repositories.DataModel
         {
             modelBuilder.Entity<Category>().ToTable("Category");
             modelBuilder.Entity<Product>().ToTable("Product");
-
-
 		}
 
 		public DbSet<Product> Product { get; set; }
