@@ -18,15 +18,15 @@ namespace Arkanis.UnitTests
         }
 
 		[Test]
-		public void CreateProd_NoName()
+		public void CreateProd_NoTitle()
 		{
             var code = "P001";
-            var name = string.Empty;
-			var entity = new ProductEntity(code, name);
+            var title = string.Empty;
+			var entity = new ProductEntity(code, title);
 			
             Assert.Throws(typeof(ApplicationException), () => {
 				entity.Create();
-			}, "Product name is required");
+			}, "Product title is required");
 		}
 
 		[Test]
@@ -60,13 +60,13 @@ namespace Arkanis.UnitTests
 		public void CreateProd_OK()
 		{
 			var code = "P001";
-			var name = "Imoji / ToyWorld";
+			var title = "Imoji / ToyWorld";
             decimal price = 3.25m;
-			var entity = new ProductEntity(code, name);
+			var entity = new ProductEntity(code, title);
             entity.unitPrice = price;
 
 			Assert.AreEqual(entity.code, code);
-			Assert.AreEqual(entity.name, name);
+			Assert.AreEqual(entity.title, title);
             Assert.AreEqual(entity.unitPrice, price);
 		}
     }

@@ -29,9 +29,24 @@
     <Reference Include="nunit.framework">
       <HintPath>..\..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6">
+      <HintPath>..\..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Services\ProductServiceTests.cs" />
+    <Compile Include="Services\CategoryServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -39,6 +54,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Code\Arkanis.Core\Arkanis.Core.csproj">
+      <Project>{3749D6EA-0BD1-4CB2-8FB2-62AAD3E3AD7A}</Project>
+      <Name>Arkanis.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Code\Arkanis.Services\Arkanis.Services.csproj">
+      <Project>{D57E2A72-A039-481D-989A-FE2197BD4F7B}</Project>
+      <Name>Arkanis.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Code\Arkanis.Repositories\Arkanis.Repositories.csproj">
+      <Project>{D3D5C63C-DB68-40EF-9DAC-9C1741AEC905}</Project>
+      <Name>Arkanis.Repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

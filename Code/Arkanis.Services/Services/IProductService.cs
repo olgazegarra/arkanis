@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using Arkanis.Core.Entities;
 
-namespace Arkanis.Services.Services
+namespace Arkanis.Services
 {
     public interface IProductService
     {
 		int Create(string code, string name, string description,
-				   int quantity, decimal unitPrice, int unitsInStock,
+				   decimal unitPrice, int unitsInStock,
 				   int unitsOrdered, string user);
 		void Delete(int id);
 		T Get<T>(string code, string name, Func<ProductEntity, T> mapper);

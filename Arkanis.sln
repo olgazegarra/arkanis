@@ -23,8 +23,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arkanis.Services", "Code\Ar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arkanis.Repositories", "Code\Arkanis.Repositories\Arkanis.Repositories.csproj", "{D3D5C63C-DB68-40EF-9DAC-9C1741AEC905}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arkanis.WebSite", "Code\Arkanis.WebSite\Arkanis.WebSite.csproj", "{1F04BDB1-0432-403F-951B-D7055D8DF85B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,10 +49,6 @@ Global
 		{D3D5C63C-DB68-40EF-9DAC-9C1741AEC905}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3D5C63C-DB68-40EF-9DAC-9C1741AEC905}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3D5C63C-DB68-40EF-9DAC-9C1741AEC905}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1F04BDB1-0432-403F-951B-D7055D8DF85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F04BDB1-0432-403F-951B-D7055D8DF85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F04BDB1-0432-403F-951B-D7055D8DF85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F04BDB1-0432-403F-951B-D7055D8DF85B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

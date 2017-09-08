@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Arkanis.Core.Entities;
 using Arkanis.Services.Repositories;
 
-namespace Arkanis.Services.Services
+namespace Arkanis.Services
 {
 	public class ProductService : IProductService
 	{
@@ -15,7 +15,7 @@ namespace Arkanis.Services.Services
 		}
 
 		public int Create(string code, string name, string description,
-						  int quantity, decimal unitPrice, int unitsInStock,
+						  decimal unitPrice, int unitsInStock,
 						  int unitsOrdered, string user)
 		{
 			var model = new ProductEntity(code, name)
