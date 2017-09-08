@@ -11,7 +11,7 @@ namespace Arkanis.WebSite.Translators
     {
         public ProductModel Translate(ProductEntity entity)
         {
-            return new ProductModel()
+            var product = new ProductModel()
             {
                 id = entity.id,
                 code = entity.code,
@@ -24,12 +24,16 @@ namespace Arkanis.WebSite.Translators
                 discount = entity.discount,
                 createdOn = entity.createdOn,
                 createdBy = entity.createdBy,
-                categories = entity.categories.Select(c => CategoryTranslator.Translate(c))
+                
             };
 
+            if (entity.categories != null)
+            {
+                product.categories = entity.categories.Select(c => CategoryTranslator.Translate(c));
+            }
+
+            return product;
         }
-
-
 
         public IEnumerable<ProductModel> Translate(IEnumerable<ProductEntity> entityList)
         {

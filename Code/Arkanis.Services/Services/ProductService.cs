@@ -15,7 +15,7 @@ namespace Arkanis.Services
 		}
 
 		public int Create(string code, string name, string description,
-						  decimal unitPrice, int unitsInStock,
+						  decimal unitPrice, int unitsInStock, decimal discount,
 						  int unitsOrdered, string user)
 		{
 			var model = new ProductEntity(code, name)
@@ -23,7 +23,9 @@ namespace Arkanis.Services
 				description = description,
 				unitPrice = unitPrice,
 				unitsInStock = unitsInStock,
-				unitsOrdered = unitsOrdered
+				unitsOrdered = unitsOrdered,
+                discount = discount,
+                createdBy = user
 			};
             model.Create();
 			return this._productRepository.Create(model);

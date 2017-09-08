@@ -7,7 +7,7 @@ namespace Arkanis.Services
     public interface IProductService
     {
 		int Create(string code, string name, string description,
-				   decimal unitPrice, int unitsInStock,
+				   decimal unitPrice, int unitsInStock, decimal discount,
 				   int unitsOrdered, string user);
 		void Delete(int id);
 		T Get<T>(string code, string name, Func<ProductEntity, T> mapper);

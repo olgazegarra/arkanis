@@ -1,5 +1,6 @@
 ﻿using Arkanis.Repositories;
 using Arkanis.Services;
+using Arkanis.WebSite.Models;
 using Arkanis.WebSite.Translators;
 using System;
 using System.Collections.Generic;
@@ -21,11 +22,30 @@ namespace Arkanis.WebSite.Controllers
         }
 
         // GET: Product
+        [HttpGet]
         public ActionResult Index()
         {
             var products = service.GetAll(translator.Translate);
-            var res = new { data = products };
+            return View(products);
+        }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(ProductModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            int id = service.Create(model.code, model.title, model.description, model.unitPrice, model.unitsInStock, model.discount, model.unitsOrdered, model.createdBy);
+            model.id = id;
+            return RedirectToAction("Index");
         }
     }
 }

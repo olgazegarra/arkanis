@@ -5,13 +5,16 @@ using System.Data.Entity.Infrastructure;
 using System.Data.Entity.Validation;
 using System.Linq;
 using MySql.Data.Entity;
+using System.Configuration;
 
 namespace Arkanis.Repositories.DataModel
 {
-    [DbConfigurationType(typeof(MySqlEFConfiguration))]
+    [DbConfigurationType(typeof(MultipleDbConfiguration))]
     public partial class ArkanisDBContext : DbContext
-	{
-        public ArkanisDBContext() : base("name=Arkanis")
+    {
+        public static string ArkanisConnectionString { get { return ConfigurationManager.ConnectionStrings["Arkanis"].ConnectionString; } }
+
+        public ArkanisDBContext() : base(MultipleDbConfiguration.GetMySqlConnection(ArkanisConnectionString), true)
         {
             this.Configuration.LazyLoadingEnabled = false;
             this.Database.CommandTimeout = 60;
@@ -20,8 +23,14 @@ namespace Arkanis.Repositories.DataModel
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().ToTable("Category");
-            modelBuilder.Entity<Product>().ToTable("Product");
-		}
+
+            modelBuilder.Entity<Product>().ToTable("Product")
+                .HasMany(a => a.categories)
+                .WithMany(b => b.products)
+                .Map(m => m.MapLeftKey("categoryId")
+                    .MapRightKey("productId")
+                    .ToTable("ProductCategory"));
+        }
 
 		public DbSet<Product> Product { get; set; }
 		public DbSet<Category> Category { get; set; }

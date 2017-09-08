@@ -1,5 +1,6 @@
 ﻿using Arkanis.Core.Entities;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Arkanis.Repositories.DataModel
@@ -18,7 +19,9 @@ namespace Arkanis.Repositories.DataModel
 		public DateTime updatedOn { get; set; }
 		public string updatedBy { get; set; }
 
-		public CategoryEntity ConvertToEntity()
+        public virtual ICollection<Product> products { get; set; }
+
+        public CategoryEntity ConvertToEntity()
 		{
 			var entity = new CategoryEntity(this.name);
             entity.id = this.id;

@@ -25,8 +25,8 @@ namespace Arkanis.Repositories
                 prod.status = model.status;
                 prod.discount = model.discount;
 
-                prod.createdBy = prod.createdBy;
-                prod.createdOn = prod.createdOn;
+                prod.createdBy = model.createdBy;
+                prod.createdOn = model.createdOn;
 				
 				context.Product.Add(prod);
 				context.SaveChanges();
