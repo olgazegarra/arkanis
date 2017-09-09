@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI.WebControls;
 
 namespace Arkanis.WebSite.Controllers
 {
@@ -17,8 +18,17 @@ namespace Arkanis.WebSite.Controllers
 
         public ProductController()
         {
-            this.service = new ProductService(new ProductRepository());
+            var key = (string)System.Web.HttpContext.Current.Session["store"];
+            this.service = new ProductService(new DataStoreFactory(key));
             this.translator = new ProductTranslator();
+
+            var selectedStorage = new SelectListItem[]{
+                new SelectListItem() { Text = "Application", Value = "app"},
+                new SelectListItem() { Text = "Memory", Value = "memory"},
+                new SelectListItem() { Text = "MySql", Value = "database"}};
+            if (!string.IsNullOrWhiteSpace(key))
+                selectedStorage.Where(i => i.Value.Equals(key)).FirstOrDefault().Selected = true;
+            ViewBag.selectedStorage = selectedStorage;
         }
 
         // GET: Product
@@ -36,6 +46,7 @@ namespace Arkanis.WebSite.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(ProductModel model)
         {
             if (!ModelState.IsValid)

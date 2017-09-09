@@ -8,23 +8,19 @@ namespace Arkanis.WebSite.Controllers
 {
     public class HomeController : Controller
     {
+
         public ActionResult Index()
         {
             return View();
         }
-
-        public ActionResult About()
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult UpdateStorage()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            if (Request != null)
+                System.Web.HttpContext.Current.Session["store"] = Request.Form["ddlStorage"].ToString();
+            return RedirectToAction("Index", "Product");
         }
     }
 }

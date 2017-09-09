@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Arkanis.Core.Entities;
 using Arkanis.Services.Repositories;
+using Arkanis.Services.Factories;
 
 namespace Arkanis.Services
 {
@@ -9,9 +10,9 @@ namespace Arkanis.Services
 	{
 		readonly IProductRepository _productRepository;
 
-		public ProductService(IProductRepository repository)
+		public ProductService(IDataStoreFactory factory)
 		{
-			this._productRepository = repository;
+			this._productRepository = factory.CreateProductStore();
 		}
 
 		public int Create(string code, string name, string description,

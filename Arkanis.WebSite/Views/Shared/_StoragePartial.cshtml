@@ -1,0 +1,17 @@
+﻿@using System.Web.UI.WebControls
+
+@using Microsoft.AspNet.Identity
+
+@using (Html.BeginForm("UpdateStorage", "Home", FormMethod.Post, new { id = "storageForm", @class = "navbar-right" }))
+{ 
+    @Html.AntiForgeryToken()
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a>Storage Type : </a>
+        </li>
+        <li>
+            @Html.DropDownList("ddlStorage", (SelectListItem[])ViewBag.selectedStorage);
+        </li>
+        <li><button type="submit"> Update Storage</button></li>
+    </ul>
+}

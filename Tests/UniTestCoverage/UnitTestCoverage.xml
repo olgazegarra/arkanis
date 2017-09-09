@@ -2,9 +2,9 @@
 <CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Summary numSequencePoints="169" visitedSequencePoints="126" numBranchPoints="75" visitedBranchPoints="44" sequenceCoverage="74.56" branchCoverage="58.67" maxCyclomaticComplexity="5" minCyclomaticComplexity="1" visitedClasses="11" numClasses="11" visitedMethods="34" numMethods="59" />
   <Modules>
-    <Module skippedDueTo="Filter" hash="B5-3B-04-14-1C-C3-B8-34-C8-C1-ED-72-E3-29-CC-57-B0-70-7A-F4">
+    <Module skippedDueTo="Filter" hash="66-2A-90-30-5A-FF-40-F8-50-2C-AA-CA-44-C9-D0-3E-36-3C-E1-76">
       <ModulePath>C:\Windows\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll</ModulePath>
-      <ModuleTime>2017-03-18T01:53:18Z</ModuleTime>
+      <ModuleTime>2017-07-28T01:27:56.1354079Z</ModuleTime>
       <ModuleName>mscorlib</ModuleName>
       <Classes />
     </Module>
@@ -56,9 +56,9 @@
       <ModuleName>System.Configuration</ModuleName>
       <Classes />
     </Module>
-    <Module skippedDueTo="Filter" hash="84-ED-EE-91-94-D2-39-93-90-C8-1A-EC-1D-57-11-26-A0-D3-FE-A8">
+    <Module skippedDueTo="Filter" hash="A8-58-D3-E7-C8-D3-4C-23-66-87-A8-C4-46-B5-D4-32-5B-6C-13-35">
       <ModulePath>C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll</ModulePath>
-      <ModuleTime>2017-03-18T05:02:00Z</ModuleTime>
+      <ModuleTime>2017-07-11T11:10:03.2788215Z</ModuleTime>
       <ModuleName>System</ModuleName>
       <Classes />
     </Module>
@@ -74,9 +74,9 @@
       <ModuleName>System.Runtime.Remoting</ModuleName>
       <Classes />
     </Module>
-    <Module skippedDueTo="Filter" hash="34-11-C5-40-14-DD-EF-29-B9-4B-61-0B-E0-44-66-77-87-26-3C-F0">
+    <Module skippedDueTo="Filter" hash="F6-1C-26-32-B8-C7-A6-87-68-7E-80-4F-D3-1F-1C-EF-30-D1-05-7D">
       <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll</ModulePath>
-      <ModuleTime>2017-03-18T20:59:45.7595548Z</ModuleTime>
+      <ModuleTime>2017-07-28T01:28:15.6381222Z</ModuleTime>
       <ModuleName>mscorlib</ModuleName>
       <Classes />
     </Module>
@@ -104,9 +104,9 @@
       <ModuleName>nunit.core.interfaces</ModuleName>
       <Classes />
     </Module>
-    <Module skippedDueTo="Filter" hash="1D-0A-A1-E9-E9-CE-21-2E-98-50-03-A3-97-EC-E3-07-66-E8-E7-DF">
+    <Module skippedDueTo="Filter" hash="5C-45-AC-96-1A-3F-70-62-64-3B-4B-48-49-8E-92-C9-37-49-F8-8E">
       <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
-      <ModuleTime>2017-03-18T20:59:43.8843944Z</ModuleTime>
+      <ModuleTime>2017-07-31T22:45:57.8867608Z</ModuleTime>
       <ModuleName>System</ModuleName>
       <Classes />
     </Module>
@@ -122,21 +122,21 @@
       <ModuleName>System.Configuration</ModuleName>
       <Classes />
     </Module>
-    <Module skippedDueTo="Filter" hash="BC-3D-7B-FA-41-15-98-9E-BD-CB-6E-11-CC-4E-F2-49-2D-A6-58-72">
+    <Module skippedDueTo="Filter" hash="21-E4-90-B5-42-20-26-BA-49-19-94-C3-CA-93-44-7B-60-08-D7-1C">
       <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
-      <ModuleTime>2017-03-18T20:59:43.8218895Z</ModuleTime>
+      <ModuleTime>2017-07-28T01:29:28.9125785Z</ModuleTime>
       <ModuleName>System.Xml</ModuleName>
       <Classes />
     </Module>
-    <Module skippedDueTo="Filter" hash="23-BC-31-F6-43-B2-A8-0E-53-0D-F9-0B-70-B7-5D-8F-D4-C6-52-05">
+    <Module skippedDueTo="Filter" hash="BA-C3-1A-32-62-15-B4-CA-4B-D6-04-07-22-46-9F-35-6C-EF-4A-64">
       <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
-      <ModuleTime>2017-03-18T20:59:47.9159862Z</ModuleTime>
+      <ModuleTime>2017-07-31T22:46:54.556383Z</ModuleTime>
       <ModuleName>System.Web</ModuleName>
       <Classes />
     </Module>
-    <Module skippedDueTo="Filter" hash="90-63-C8-99-42-A7-4D-0A-3F-27-55-D9-27-57-AE-E0-E9-B0-15-E8">
+    <Module skippedDueTo="Filter" hash="7A-49-65-6E-AE-46-F5-21-A8-D9-54-E0-52-F2-8F-7B-C4-F3-43-25">
       <ModulePath>C:\Windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
-      <ModuleTime>2017-03-18T01:53:22Z</ModuleTime>
+      <ModuleTime>2017-07-31T22:46:27.5353546Z</ModuleTime>
       <ModuleName>System.Web</ModuleName>
       <Classes />
     </Module>
@@ -146,9 +146,9 @@
       <ModuleName>nunit.core</ModuleName>
       <Classes />
     </Module>
-    <Module skippedDueTo="Filter" hash="1D-0A-A1-E9-E9-CE-21-2E-98-50-03-A3-97-EC-E3-07-66-E8-E7-DF">
+    <Module skippedDueTo="Filter" hash="5C-45-AC-96-1A-3F-70-62-64-3B-4B-48-49-8E-92-C9-37-49-F8-8E">
       <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
-      <ModuleTime>2017-03-18T20:59:43.8843944Z</ModuleTime>
+      <ModuleTime>2017-07-31T22:45:57.8867608Z</ModuleTime>
       <ModuleName>System</ModuleName>
       <Classes />
     </Module>
@@ -170,10 +170,10 @@
       <ModuleName>nunit.core.interfaces</ModuleName>
       <Classes />
     </Module>
-    <Module hash="25-59-AF-86-11-CB-D8-93-69-82-B1-0A-8E-0D-4D-3A-8B-9C-DA-75">
+    <Module hash="B0-8E-01-F3-57-90-B6-D6-AD-38-DE-E8-03-6B-4E-7E-E9-72-B7-38">
       <Summary numSequencePoints="65" visitedSequencePoints="60" numBranchPoints="13" visitedBranchPoints="13" sequenceCoverage="92.31" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="7" numClasses="7" visitedMethods="13" numMethods="13" />
       <ModulePath>C:\Users\developer\Documents\projects\GHArkanis\Tests\Arkanis.UnitTests\bin\Debug\Arkanis.UnitTests.dll</ModulePath>
-      <ModuleTime>2017-09-08T14:54:20.5269686Z</ModuleTime>
+      <ModuleTime>2017-09-08T21:40:16.6094486Z</ModuleTime>
       <ModuleName>Arkanis.UnitTests</ModuleName>
       <Files>
         <File uid="1" fullPath="C:\Users\developer\Documents\projects\GHArkanis\Tests\Arkanis.UnitTests\Entities\ProductEntityTests.cs" />
@@ -504,9 +504,9 @@
       <ModuleName>System.Configuration</ModuleName>
       <Classes />
     </Module>
-    <Module skippedDueTo="Filter" hash="BC-3D-7B-FA-41-15-98-9E-BD-CB-6E-11-CC-4E-F2-49-2D-A6-58-72">
+    <Module skippedDueTo="Filter" hash="21-E4-90-B5-42-20-26-BA-49-19-94-C3-CA-93-44-7B-60-08-D7-1C">
       <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
-      <ModuleTime>2017-03-18T20:59:43.8218895Z</ModuleTime>
+      <ModuleTime>2017-07-28T01:29:28.9125785Z</ModuleTime>
       <ModuleName>System.Xml</ModuleName>
       <Classes />
     </Module>
@@ -1148,9 +1148,9 @@
       <ModuleName>Microsoft.Practices.EnterpriseLibrary.Common</ModuleName>
       <Classes />
     </Module>
-    <Module skippedDueTo="Filter" hash="85-58-23-8F-0C-AC-C8-F5-79-06-9F-C2-0E-A7-D8-8C-BA-5B-5C-2D">
+    <Module skippedDueTo="Filter" hash="EC-C8-73-33-83-EB-E9-33-AC-FD-CC-8D-E1-9C-57-8F-47-55-09-A9">
       <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</ModulePath>
-      <ModuleTime>2017-03-18T20:59:45.8533111Z</ModuleTime>
+      <ModuleTime>2017-07-28T01:29:28.5532064Z</ModuleTime>
       <ModuleName>System.Core</ModuleName>
       <Classes />
     </Module>
